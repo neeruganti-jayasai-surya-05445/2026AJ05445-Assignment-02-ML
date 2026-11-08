@@ -138,6 +138,6 @@ seaborn
 
 ---
 
-# Conclusion
+### Conclusion
 
-This project demonstrates the complete machine learning workflow including data preprocessing, model training, performance evaluation, model comparison, deployment using Streamlit Community Cloud, and interactive prediction through a web application. The developed solution helps identify factors influencing airline passenger satisfaction and provides a practical example of real-world classification model deployment.
+Among all the evaluated machine learning models, the Support Vector Machine (SVM) demonstrated the best predictive performance on the Aviation Passenger Satisfaction dataset. Its superior AUC, F1 Score, and MCC indicate that it not only achieved high classification accuracy but also maintained an excellent balance between Precision and Recall. Therefore, SVM was selected as the final recommended model for this classification problem.
