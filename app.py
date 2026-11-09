@@ -69,67 +69,67 @@ if uploaded_file:
 
     probs = model.predict_proba(X)[:,1]
 
-st.subheader("Evaluation Metrics")
+    st.subheader("Evaluation Metrics")
 
-st.write(
-    "Accuracy:",
-    round(accuracy_score(y,preds),4)
-)
-
-st.write(
-    "AUC:",
-    round(roc_auc_score(y,probs),4)
-)
-
-st.write(
-    "Precision:",
-    round(precision_score(y,preds),4)
-)
-
-st.write(
-    "Recall:",
-    round(recall_score(y,preds),4)
-)
-
-st.write(
-    "F1:",
-    round(f1_score(y,preds),4)
-)
-
-st.write(
-    "MCC:",
-    round(
-        matthews_corrcoef(y,preds),
-        4
+    st.write(
+        "Accuracy:",
+        round(accuracy_score(y,preds),4)
     )
-)
 
-st.subheader("Confusion Matrix")
+    st.write(
+        "AUC:",
+        round(roc_auc_score(y,probs),4)
+    )
 
-cm = confusion_matrix(y,preds)
+    st.write(
+        "Precision:",
+        round(precision_score(y,preds),4)
+    )
 
-st.dataframe(cm)
+    st.write(
+        "Recall:",
+        round(recall_score(y,preds),4)
+    )
 
-st.subheader(
-    "Classification Report"
-)
+    st.write(
+        "F1:",
+        round(f1_score(y,preds),4)
+    )
 
-report = classification_report(
-    y,
-    preds,
-    output_dict=True
-)
+    st.write(
+        "MCC:",
+        round(
+            matthews_corrcoef(y,preds),
+            4
+        )
+    )
 
-st.dataframe(
-    pd.DataFrame(report).transpose()
-)
+    st.subheader("Confusion Matrix")
 
-results = pd.read_csv(
-    "model_results.csv"
-)
+    cm = confusion_matrix(y,preds)
 
-st.subheader(
-    "Model Comparison"
-)
+    st.dataframe(cm)
 
-st.dataframe(results)
+    st.subheader(
+        "Classification Report"
+    )
+
+    report = classification_report(
+        y,
+        preds,
+        output_dict=True
+    )
+
+    st.dataframe(
+        pd.DataFrame(report).transpose()
+    )
+
+    results = pd.read_csv(
+        "model_results.csv"
+    )
+
+    st.subheader(
+        "Model Comparison"
+    )
+
+    st.dataframe(results)
