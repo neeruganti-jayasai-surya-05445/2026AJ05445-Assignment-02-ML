@@ -1,54 +1,46 @@
-# 2026AJ05445-Assignment-02-ML
+#### 2026AJ05445-Assignment-02-ML
 Repo created for Assignment 02 (Machine Learning Course)
 
-# Machine Learning Assignment 2
 ## Aviation Passenger Satisfaction Classification
 
 ---
 
-# a. Problem Statement
+### 1. Problem Statement
 
 Customer satisfaction is one of the most important indicators of service quality in the aviation industry. Airlines collect passenger feedback on various aspects of travel such as inflight service, seating comfort, cleanliness, check-in process, baggage handling, flight delays, and overall travel experience.
 
-The objective of this project is to develop machine learning classification models that can predict whether a passenger is satisfied or dissatisfied based on travel-related features. This prediction can help airlines improve customer experience, identify factors affecting passenger satisfaction, and make data-driven business decisions.
+The objective of this assignment is to predict whether a passenger is satisfied or dissatisfied based on travel-related features, using Machine Learning Classification Models. This can help airlines improve customer experience, identify factors affecting passenger satisfaction, and make data-driven business decisions.
 
 ---
 
-# b. Dataset Description
-
-### Dataset Name
-Binary Aviation Satisfaction Dataset
-
-### Source
-Kaggle
-
-Dataset Link:
-https://www.kaggle.com/datasets/arseniyshutko/binary-aviation-satisfaction-129k
-
-### Dataset Overview
-
-The dataset contains approximately 129,000 passenger records collected from airline customers.
-
-### Problem Type
-Binary Classification
-
-### Target Variable
-
-Satisfaction
----
-
-# c. GitHub Repository Link
-
-Repository URL:
-
-https://github.com/neeruganti-jayasai-surya-05445/2026AJ05445-Assignment-02-ML.git
+### 2. Dataset Description
 
 ---
 
-# d. Models Used
+| Attribute | Details |
+|------------|---------|
+| Dataset Name | Binary Aviation Satisfaction Dataset |
+| Source | Kaggle |
+| Dataset Link | https://www.kaggle.com/datasets/arseniyshutko/binary-aviation-satisfaction-129k |
+| Dataset Overview | The dataset contains approximately 129,000 passenger records collected from airline customers. |
+| Problem Type | Binary Classification |
+| Target Variable | Satisfaction |
+
+---
+
+### 3. GitHub Repository Link
+
+---
+
+**Repository URL:** https://github.com/neeruganti-jayasai-surya-05445/2026AJ05445-Assignment-02-ML.git
+
+---
+
+### 4. Models Used
+
+---
 
 The following machine learning classification algorithms were implemented:
-
 1. Logistic Regression
 2. Decision Tree Classifier
 3. K-Nearest Neighbors (KNN)
@@ -56,7 +48,9 @@ The following machine learning classification algorithms were implemented:
 
 ---
 
-# Model Comparison Table
+### 5. Model Comparison Table
+
+---
 
 | ML Model Name | Accuracy | AUC | Precision | Recall | F1 Score | MCC |
 |--------------|----------|-----|-----------|--------|----------|-----|
@@ -67,7 +61,7 @@ The following machine learning classification algorithms were implemented:
 
 ---
 
-# e. Observations
+### 6. Observations
 
 | ML Model Name | Observation about Model Performance |
 |---------------|-------------------------------------|
@@ -79,10 +73,11 @@ The following machine learning classification algorithms were implemented:
 
 ---
 
-# Evaluation Metrics Used
+### 7. Evaluation Metrics Used
+
+---
 
 The following evaluation metrics were used to assess all models:
-
 1. Accuracy
 2. AUC Score
 3. Precision
@@ -92,52 +87,39 @@ The following evaluation metrics were used to assess all models:
 
 ---
 
-# Streamlit Web Application
-
-The application provides the following features:
-
-### Dataset Upload
-
-- Upload test_data.csv file
-
-### Model Selection
-
-- Logistic Regression
-- Decision Tree
-- KNN
-- Naive Bayes
-- SVM
-
-### Evaluation Metrics Display
-
-- Accuracy
-- AUC Score
-- Precision
-- Recall
-- F1 Score
-- MCC Score
-
-### Performance Visualization
-
-- Confusion Matrix
-- Classification Report
+### 8. Streamlit Web Application
 
 ---
 
-# Requirements
+**Application URL:** https://2026aj05445-assignment-02-mlgit-uy4ej2apphm9jkcgt3bdn9p.streamlit.app/
+
+The application provides the following features:
+1. **Dataset Upload:** Upload test_data.csv file
+2. **Model Selection:** Logistic Regression, Decision Tree, KNN, SVM
+3. **Evaluation Metrics Display:** Accuracy, AUC Score, Precision, Recall, F1 Score, MCC Score
+4. **Performance Visualization:** Confusion Matrix, Classification Report
+
+---
+
+### 9. Requirements
 
 ```bash
-streamlit
-pandas
 numpy
-scikit-learn
-joblib
+pandas
 matplotlib
+scikit-learn
+kagglehub
+streamlit
+joblib
 seaborn
 ```
 
 ---
 
-### Conclusion
+### 10. Conclusion
 
+---
+ 
 Among all the evaluated machine learning models, the Support Vector Machine (SVM) demonstrated the best predictive performance on the Aviation Passenger Satisfaction dataset. Its superior AUC, F1 Score, and MCC indicate that it not only achieved high classification accuracy but also maintained an excellent balance between Precision and Recall. Therefore, SVM was selected as the final recommended model for this classification problem.
+
+---
