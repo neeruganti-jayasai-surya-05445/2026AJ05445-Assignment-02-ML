@@ -123,13 +123,3 @@ if uploaded_file:
     st.dataframe(
         pd.DataFrame(report).transpose()
     )
-
-    results = pd.read_csv(
-        "model_results.csv"
-    )
-
-    st.subheader(
-        "Model Comparison"
-    )
-
-    st.dataframe(results)
